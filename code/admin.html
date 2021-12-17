@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> Admin page </h1>
+       <form id="form">
+           <input type="text" id="mediType" placeholder="Type of medicine">
+           <input type="text" id="mediCont" placeholder="medicin containt">
+           <span id="symb">&#8377</span>
+           <input type="text" id="mediVita" placeholder="Vitamin">
+           <input type=" number" id="mrp" placeholder="MRP">
+           
+             <input type="submit" value="submit">
+
+       </form>
+       <button>Go to Product</button>
+</body>
+</html>
+<script>
+    document.querySelector("#form").addEventListener("submit", addItem)
+
+    var mediArr= JSON.parse(localStorage.getItem("medicinList")) || [];
+
+    function addItem(event)
+    {
+        event.preventDefault()
+        
+        var mediType= document.getElementById("mediType").value
+        var mediCont= document.getElementById("mediCont").value
+        var mediVita= document.getElementById("mediVita").value
+        var mediMrp= document.getElementById("mrp").value
+        
+    
+
+        var mediObj={
+            mediType:mediType,
+            mediCont:mediCont,
+            mediVita:mediVita,
+        
+            mediMrp:mediMrp,
+    
+
+        }
+mediArr.push(mediObj)
+
+localStorage.setItem("medicinList", JSON.stringify(mediArr))
+
+    }
+    document.querySelector("button").addEventListener("click", function()
+    {
+        window.location.href="lab.html"
+    })
+
+</script>

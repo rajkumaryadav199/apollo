@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body style="margin-top: 0px;">
+   <div id="container">
+    <nav>
+        <div id="nav-bar">
+        <div class="left-sidebar">
+   
+            <div class="logo">
+                <a href="index.html"><img class="logo-img" src="image/ic_logo.webp" alt="logo"></a>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <div class="right-div">
+    
+              <a href="" >
+                <span  class="doctor1">DOCTOR</span>
+                <br>
+                <span class="doctor12">Consult<br>Online</span>
+            </a>
+            
+
+            </div>
+            <div class="right-div">
+              <a href="">
+                  <span class="doctor1"> PHARMACY</span>
+                  <span class="doctor12">
+                      Medicines & <br> other products
+                  </span>
+              </a>
+            </div>
+            <div class="right-div">
+                <a href="">
+                    <span class="doctor1"> LAB TESTS</span>
+                    <span class="doctor12">
+                        Health <br> check-ups
+                    </span>
+                </a>
+            </div>
+            <div class="right-div">
+                <a href="">
+                    <span class="doctor1"> COVID-19</span>
+                    <span class="doctor12">
+                        Latest <br> updates
+                    </span>
+                </a>
+            </div>
+            <div class="cart-login">
+            
+                <div class="cart" style="display: flex; flex-direction: column;">
+                    <span id="totalNumber" style="color: red; font-size: 20px;"></span>
+                   <span> <a href="" style="margin-top: 0px;">
+                    <i style="font-size: 20px;  color: rgb(4, 37, 37);" class="fas fa-shopping-cart" ></i>
+                </a></span>
+                  
+                </div>
+
+                <div class="login">
+                    <a href="LogIn.html"><i class="far fa-user"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </nav>
+
+<!-- starting-cart -->
+
+    <div class="main-div-cart">
+         <!-- cart-container -->
+      <div class="cart-div">
+
+        <div class="cart-left">
+            <div class="main-patient-btn">
+            <div class="patient-name">
+                <a href="index.html"> <i class="fas fa-arrow-left"></i></a><span><h4>Back to Patient Names</h4></span>
+            </div>
+            <div class="btn-div">
+                <button class="add-btn">+ADD TESTS</button>
+            </div>
+
+           
+        </div>
+        <div id="cartDiv">
+
+        </div>
+        </div>
+     <!-- price-container -->
+        <div class="cart-price">
+            <div class="charge-div">
+                <div class="total-charge">
+                    <h4 style="color: teal; margin-top: 20px;">Total charge</h4>
+                </div>
+                <div class="please-select">
+                    <p style="margin: 8px 0px 0px 5px;">Please select address to view Offers and Coupons</p>
+                </div>
+                <div class="diff-charges">
+                    <div class="mrp">
+                        <span class="total-mrp">Total MRP</span>
+                        <span class="rs-0.0" style="margin-right: 50px;">&#8377 <span id="pri"></span></span>
+                    </div>
+                    <div class="coupan">
+                        <input id="coupan" style="color: #00B3A9;" placeholder=" Coupon Discount" >
+                        <button id="btn1" type="submit"> Apply</button>
+                        <span class="coupan-dis"  style="margin-right: 50px;color: #00B3A9;">-&#8377 <span id="coupPri"></span></span>
+                    </div>
+                    <div class="home-collection">
+                        <span class="home-collection">Home Collection Charge</span>
+                        <span class="home-rupies"  style="margin-right: 50px;">&#8377 <span id="netPri"></span> </span>
+                    </div>
+                </div>
+                <div class="total-charge">
+                    <span>To Pay</span>
+                </div>
+            </div>
+        </div>
+
+
+      </div>
+
+
+      
+       <!-- footer-div -->
+       <div class="footer">
+        <div class="footer-child1">
+            <div class="child1-img">
+                <img src="image/ic_logo.webp"  alt="" style="height: 100%; width: 100%;">
+            </div>
+        </div>
+        <div class="footer-child">
+            <ul>
+                <li>
+                    <div class="bottomLink-root">
+                        <div class="bottom-header">
+                            <h2>About Apollo 247</h2>
+                        </div>
+                        <div class="bottomLink-atag">
+
+                            <a title="About us" class="bottom-inner-links" style="margin-left: 20px;" href="">About Us</a>
+
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Contact Us/ Grivance</a>
+
+                            
+                            <a title="Contact Us" class="bottom-inner-links" style="margin-left: 20px;" href="">FAQs</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Healths Queris </a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Term and Condition</a>
+                            
+                            <a class="bottom-inner-links" ::before style="margin-left: 20px;" href="">Return Policies</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Refund Policies</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Privacy Policies</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Apollo 247 Android App</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Online Doctor App</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Online Medicine App</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Apollo Pharmacy</a>
+                            
+
+
+                        </div>
+                        
+                       
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="bottomLink-root">
+                        <div class="bottom-header">
+                            <h2>Service</h2>
+                        </div>
+                        <div class="bottomLink-atag">
+
+                            <a title="About us" class="bottom-inner-links" style="margin-left: 20px;" href="">Online Doctor Consultation</a>
+
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Apollo Circle MemberShip</a>
+
+                            
+                            <a title="Contact Us" class="bottom-inner-links" style="margin-left: 20px;" href="">Online Medicine</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Project Kavach </a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Cough Scanner</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Covid Vacction Tracker</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">covid Vaccine Updates</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Apollo Pro Health Program</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Doctor By specialists</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Doctor By City</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">All Doctor Lists</a>
+                         
+                            
+
+
+                        </div>
+                        
+                       
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomLink-root">
+                        <div class="bottom-header">
+                            <h2>Top Specialties</h2>
+                        </div>
+                        <div class="bottomLink-atag">
+
+                            <a title="About us" class="bottom-inner-links" style="margin-left: 20px;" href="">Covid Consultation</a>
+
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Consults physicians</a>
+
+                            
+                            <a title="Contact Us" class="bottom-inner-links" style="margin-left: 20px;" href="">Consults Dermatologist</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Conssults Paediatricians </a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Consultas gynaecologists</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Conssult Gastroenterologists</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Consult Dietitans </a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Consult ENT Specialists</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Consult Geriatricians</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Consult Diabetologist</a>
+                            
+                             
+                            
+
+
+                        </div>
+                        
+                       
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomLink-root">
+                        <div class="bottom-header">
+                            <h2>Book Lab Tests at Home</h2>
+                        </div>
+                        <div class="bottomLink-atag">
+
+                            <a title="About us" class="bottom-inner-links" style="margin-left: 20px;" href="">Rt PCR Test at Home</a>
+
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Book Lab Test At home</a>
+
+                            
+                            <a title="Contact Us" class="bottom-inner-links" style="margin-left: 20px;" href="">Renal Profile(KFT, RFT Test</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Hemogram Test </a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Lipid Profile test</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Thyroid Profile Test</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">D Dimer Test</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Urin Culture Test</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Complete Blood Count</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Widel Test</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Liver Function Test</a>
+                            
+                   
+                            
+
+
+                        </div>
+                        
+                       
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomLink-root">
+                        <div class="bottom-header">
+                            <h2>Product Categories</h2>
+                        </div>
+                        <div class="bottomLink-atag">
+
+                            <a title="About us" class="bottom-inner-links" style="margin-left: 20px;" href="">View all Brand</a>
+
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Healths Care</a>
+
+                            
+                            <a title="Contact Us" class="bottom-inner-links" style="margin-left: 20px;" href="">Personal Care</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Baby Care </a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Nutrition</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Healthcare Device</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Beauty Skin Care</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Immunity Boosters</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Coronavirus Prevvention</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Diabeties Care</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Patanjali Coronil Kit</a>
+                            
+                            <a class="bottom-inner-links" style="margin-left: 20px;" href="">Mamaearth Products</a>
+                            
+
+
+                        </div>
+                        
+                       
+                    </div>
+                </li>
+            </ul>
+    </div>
+
+    </div> 
+    </div>
+</div>
+</body>
+</html>
+<script src="cart.js"></script>

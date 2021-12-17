@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#container{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+h1{
+    color: #02475b;
+}
+h3{
+color: steelblue;
+}
+h4{
+    color: #02475b;  
+}
+.gender{
+    width:50%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+hr{
+    border-bottom: 1px solid;
+    color: green;
+}
+input{
+    border: none;
+    border-bottom:1px solid green;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+    <h1>Welcome to apollo 24|7</h1>
+      <br>
+    <h3>Enter your details. Let us quickly get to know your so that we can get you the best help :)</h3>
+   <br>
+
+   <br>
+   <h4>Full Name</h4>
+   <br>
+    <input type="text" id="email" placeholder="First Name">
+    <br>
+
+    <input type="text" id="pass" placeholder="Last Name">
+    <br>
+    <h4>Date of Birth</h4>
+    <br>
+    <input type="text" id="username" placeholder="dd/mm/yyyy">
+    <hr >
+    <br>
+    <h4>Gender</h4>
+       <div class="gender">
+        <button class="btn1">Male</button>
+        <Button class="btn1">Female</Button>
+
+       </div>
+    <button id="btn"> Sign Up</button>
+</div>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click" ,signUp)
+
+    var userData= JSON.parse(localStorage.getItem("userDataBase")) ||[];
+    function signUp(event)
+    {
+        event.preventDefault()
+        var email= document.querySelector("#email").value;
+        var pass= document.querySelector("#pass").value;
+        var name= document.querySelector("#username").value;
+        
+
+        var userObj={
+            userEmail:email,
+            userPass:pass,
+            userName:name,
+        };
+        userData.push(userObj);
+
+        localStorage.setItem("userDataBase", JSON.stringify(userData))
+
+        window.location.href="index.html"
+
+    }
+</script>
