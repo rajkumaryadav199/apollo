@@ -1,0 +1,1083 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+  body{
+      background-color: #DCDFCE;
+  }
+
+   #container{
+        width: 81%;
+        margin: auto;
+        background-color: #fff;
+        /* height: auto; */
+        
+    }
+nav{
+    width: 81%;
+    height: 80px;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-right: 30px; */
+    background-color:white;
+    box-shadow: 4px 7px 38px -27px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 7px 38px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 7px 38px -27px rgba(0,0,0,0.75);
+    z-index: 100;
+    position: fixed; 
+    
+    margin-top: 0px;
+}
+
+
+
+#nav-bar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+  
+
+}
+#nav-bar>.left-sidebar{
+  
+    width: 100%;
+}
+#nav-bar>.right-sidebar{
+    display: flex;
+  
+    width: 100%;
+    
+    justify-content: space-between;
+  
+}
+
+.left-sidebar > .logo{
+width:20%;
+height:100%;
+
+
+}
+.logo-img{
+    width: 100%;
+    height: 100%; 
+}
+.right-sidebar > .right-div{
+    width:15%;
+
+height:100%;
+
+
+}
+.doctor1{
+    border-bottom: 1px solid #0f7c9b;
+    text-transform: uppercase;
+    color:rgb(2,71,91) ;
+    padding-bottom: 4px;
+    font-size: 16px !important;
+    font-weight: bold;
+    line-height: 25px !important;
+    
+
+}
+.doctor12{
+   opacity: 0.9;
+   font-size: 15px !important;
+   padding-top: 20px;
+   text-decoration: none;
+   line-height: 18px;
+   color: #1b677c;
+}
+a:link{
+    text-decoration: none;
+}
+.cart-login{
+  
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.cart>a>.fas{
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+}
+.cart-login > div{
+  
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+  .login{
+      width: 40%;
+      height: 40%;
+      border-radius: 50%;
+      background-color: #02475b;
+      align-items: center;
+      
+  }  
+.login>a>.far{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 15px;
+}
+    
+
+.main-div{
+
+display: flex;
+  
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    grid-gap: 10px;
+    
+
+}
+.hello-parent-div{
+    display: flex;
+margin-top: 100px;
+    
+    width: 100%;
+    height:500px;
+    justify-content: space-between;
+}
+.hello-div{
+    
+        width: 35%;
+        height:100%;
+        display: flex;
+        margin-left: 20px;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #fff;
+}
+.doc-photo-div{
+    
+    width: 55%;
+    height:100%; 
+    
+}
+.doc-photo-div > img{
+    width: 100%;
+    height: 100%;
+
+}
+.appoinment-div,.buy-div {
+width: 100%;
+
+
+height:18%; 
+}
+.lab-test{
+    width: 100%;
+
+display: flex;
+justify-content: space-between;
+height:15%; 
+}
+.lab-test >div{
+    width: 48%;
+   
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 5px 20px rgb(128 128 128 / 30%);
+    background-color: #fff;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+
+}
+.lab-test > div> a{
+    width: 100%;
+   
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 5px 20px rgb(128 128 128 / 30%);
+    background-color: #fff;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+
+}
+.ic_home{
+    display: flex;
+    width: 30%;
+    height: 100%;
+   
+align-content: center;
+padding: 5%;
+
+}
+.ic_home_text{
+    display: grid;
+    width: 65%;
+    height: 100%;
+   
+    color: #02475b;
+    font-family: IBM Plex Sans,sans-serif;
+    font-size: 16px;
+       justify-content: center;
+       align-items: center;
+
+     
+}
+.appoinment-div > spam{
+    font-size: 56px;
+    font-weight: 600;
+    color: #02475b;
+}
+.appoinment-div > p{
+  color: #0087ba;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.47;
+
+}
+.buy-div{
+   display: flex; 
+background: linear-gradient(105.88deg, #2C4C70 0.63%, #5EACB0 102.46%);
+border-radius: 10px;
+
+}
+.appoinment-img{
+    display: flex; 
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+  
+     justify-content: center;
+    align-items: center;
+     
+    
+}
+.appoinment-img > img{
+    width: 70%;
+    height: 50%;
+
+}
+.appoinment-text{
+    display: flex; 
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+  
+     justify-content: center;
+    /* align-items: center; */
+     
+}
+.appoinment-text >h1{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.buy-div > a{
+display: flex;
+width: 100%;
+}
+.first-icon{
+     display: flex;
+    width: 20%;
+    height: 100%;
+    
+  
+     /* justify-content: center; */
+    align-items: center;
+    justify-content: end;
+    
+       
+}
+.first-icon > i{
+    /* border: 2rem solid  white;
+    display: inline-block;
+    border-width: 0 4px 4px 0; */
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: #fff;
+
+}
+/* .fas{
+transform: rotate(-45deg);
+} */ 
+  
+        /* section-1 */
+
+ 
+.section1{
+   width: 96%; 
+   height: 200px;
+ 
+   padding: 1%;
+   margin: 2%;
+}
+.section1> .slide-container{
+    width: 100%; 
+    height: 200px;
+  
+}
+.section1> .slide-container >.slides> img{
+    width: 100%; 
+    height: 200px;
+  
+}
+.slides{
+    display: none
+}
+.slides>img{
+    cursor: pointer;
+}
+.slide-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color:#2C4C70;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: none;
+    /* border-radius: 0 3px 3px 0; */
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.582);
+    border-radius: 50%;
+
+}
+.next {
+    right: 0;
+    border-radius: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: -10px 2px ;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+ 
+}
+   
+.active, .dot:hover {
+    background-color: #2C4C70;
+    border-radius: 40%;
+    width: 2.5%;
+}
+/* .dots{
+    width: 100%;
+    height: 10px;
+    border: 1px solid rgb(0, 255, 55);
+
+} */
+.vactinated-related{
+    display: flex;
+    margin-top: 10px;
+    width: 96%;
+    height: 150px;
+    margin: 2%;
+  border-radius: 20px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+   
+}
+.vactinated-related > div{
+    width: 100%;
+    height: 50%;
+  
+}
+
+.vacti-quaries > div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 20px;
+color:#07AE8B;
+}
+.faq-div {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    /* align-content: center; */
+    align-items: center;
+    
+}
+.faq-div > div{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 80%;
+  
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; 
+}
+.faq-div > div> a{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.symb-div{
+    display: flex;
+flex-direction: row;
+    width: 20%;
+    height: 80%;
+  
+    justify-content: center;
+    
+}
+.text-div{
+
+    width: 70%;
+    height: 80%;
+   
+    color: orangered;
+   text-align: center;
+   justify-content: center;
+
+}
+ .symb-div > i{
+  
+    font-size: 30px;
+    margin-top: 12px;
+     color:rgb(202, 60, 16); 
+}
+/* .far{
+    transform: rotate(-42deg);
+} */
+.pro-helth{
+    width: 96%;
+    height: 200px;
+    margin: 2%;
+  
+
+}
+.helth-articals{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 450px;
+    
+    margin: auto;
+
+}
+.helth-articals>div{
+
+    width: 100%;
+    height: 150px;
+   
+}
+.child-div1{
+
+    background-image: url( "https://newassets.apollo247.com/images/ecosystem-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.child-div1-text{
+    display: flex;
+    line-height: 40px;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: #fff;
+    width: 90%;
+    height: 100%;
+  
+}
+.child-div1-medicine{
+    width: 4%;
+    height: 30%;
+    background-image: url("image/h-medicine\ \(1\).svg");
+  
+}
+.child-div2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 15px solid red; */
+    align-items: center;   
+    
+}
+.child-div1-text1{
+    display: flex;
+    line-height: 40px;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: #07AE8B;
+    width: 60%;
+    height: 100%;
+  
+    
+   
+}
+.child-div1-medicine1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+    align-content: center;
+    align-items: center;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  
+    color: rgb(236, 113, 68);
+  
+}
+.child-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+}
+.child-div > div {
+    display: flex;
+    width: 100%;
+   flex-direction: row;
+   justify-content: space-around;
+    height: 100%;
+    
+}
+.child-div > div > div{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+justify-content: space-around;
+    height: 100%;
+   
+}
+.child-div > div > div>a{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+justify-content: space-around;
+align-items: center;
+
+    height: 80%;
+    border: 1px solid rgb(5, 61, 61); 
+    border-radius: 10px;
+}
+.mult-img{
+    width: 20%;
+    height: 80%;
+  
+    text-align: center;
+    
+    
+}
+.mult-text{
+    width: 75%;
+    height: 80%;
+    color:#00485D ;
+    font-size: 10px;
+    
+  
+}
+.section2{
+    width: 96%;
+    height: auto;
+    color:#00485D ;
+    margin: 2%;
+    
+   
+}
+.section2 >h3{
+    color: #02475B;
+}
+.section2 >p>span>a>i{
+    color: #0c5266;
+   font-size: 20px;
+   font-weight: 800;
+
+}
+.section2 >p{
+    color:#00485D ;
+   font-size: 16px; 
+}
+.section2> ul{
+    margin-left: 30px;
+}
+.footer{
+    width: 100%;
+    height: 1000px;
+    
+  
+    background-color: black;
+
+
+}
+.footer> div{
+    width: 90%;
+    height: 150Px;
+  
+    margin: 0 2% ;
+}
+
+.footer-child1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+       
+}
+.child1-img{
+    width: 20%;
+    height: 100%;
+  
+}
+.footer-child >div{
+    display: flex;
+    margin-left: 10px;
+    
+}
+.footer-child >div > ul{
+ margin-left: 10px;
+    
+}
+.footer-ul{
+  display: block;  
+  list-style-type: disc;
+
+  color:#fff;
+   margin: 20px;
+}
+.footer-child ul li a{
+    color: #fff;
+    font-size: 15px;
+    display: inline-block;
+    text-align: left;
+    line-height: 27px;
+
+}
+.bottomLink-root{
+    width: 100%;
+    background:transparent ; 
+    height: auto 
+}
+.bottom-header{
+    width:100%;
+    height: 30px;
+    font-weight: 600;
+    color: #FCB716;
+}
+.bottomLink-atag{
+    display: block;
+    height: auto;
+    width: 96%;
+    padding: 10px 0px 20px 10px ;
+    position: relative;
+    margin-left: 2%;
+    text-align: left;
+
+}
+.bottom-inner-links::before{
+    top: 38%;
+    left: -5px;
+    width: 5px;
+    height: 5px; 
+    content:'';
+     visibility: visible !important;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    
+}
+*::before{
+    box-sizing: inherit;
+}
+      /* cart-style */
+      .main-div-cart{
+          width: 100%;
+          height: auto;
+        
+          background-color: #F7F8F5;
+        
+      }
+      .cart-div{
+          margin-top: 80px;
+        width: 100%;
+        height: auto;
+        border: 1px solid rgb(35, 35, 37); 
+        display: flex; 
+        flex-direction: row;
+        background-color: #F7F8F5;
+      }
+      .cart-left{
+          display: flex;
+          flex-direction: column;
+        width: 60%;
+        height: auto;
+        border: 1px solid rgb(37, 35, 37); 
+        display: flex;  
+        overflow-y: scroll; 
+      }
+      .cart-price{
+        width: 40%;
+        height: 800px;
+        border: 1px solid rgb(37, 35, 35); 
+        display: flex; 
+        margin-top: 20px;
+        background-color: #fff;
+      }
+      .main-patient-btn{
+          margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgb(37, 35, 35); 
+        display: flex;  
+        justify-content: space-around; 
+      }
+      .patient-name{
+        width: 40%;
+        height: 30px;
+        border: 1px solid rgb(37, 35, 37); 
+        display: flex;  
+        color: #02475b;
+        font-size: 20px;
+      }
+      .btn-div{
+        width: 20%;
+        height: 38px;
+        /* border: 1px solid rgb(37, 35, 37);  */
+        /* background-color: #FCB716; */
+        display: flex; 
+        justify-content: center;
+        align-content: center;
+        /* border-radius: 15px; */
+    
+      }
+      .add-btn{
+          background-color:#FFFBF0 ;
+          color: #FC9916;
+          width: 100%;
+          height: 100%;
+          border-color:  #FC9916;;
+          border-radius: 15px; 
+      }
+      .add-btn:hover{
+          cursor: pointer;
+      }
+      .patient-name >a> .fas{
+          font-size: 30px;
+          margin:0px 20px 0px 20px;
+          color: #02475b;
+      }
+      .charge-div{
+          width: 90%;
+          height: 500px;
+        border: 1px solid rgb(21, 255, 0);
+        margin: 20px 10px 0px 15px;
+        display: flex;
+        flex-direction: column;
+       background-color: #F7F8F5;
+       justify-content: center;
+       align-items: center;
+      }
+      
+      .total-charge{
+          flex-direction:column;
+        width: 90%;
+        height: 80px;
+
+         margin: 5px;
+        font-size: 20px;
+    
+    
+      border-bottom: 1px solid teal ;
+
+      } 
+      .please-select{
+        width: 90%;
+        height: 50px;
+        margin:5px;
+        
+    
+     
+      background-color: #FCFDDA;
+      }
+      .diff-charges{
+        width: 90%;
+        height: 40%;
+        margin:5px;
+    
+    
+      }
+
+      .diff-charges > div{
+        width: 100%;
+        height: 33%;
+        display: flex;
+        flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+    
+      } 
+      .diff-charges>div> span{
+          font-size: 20px;
+          color:#01475B;
+          font-weight: bold;
+      }
+      .lab-parent-div{
+          margin-top: 80px;
+          width: 96%;
+          height: auto;
+          
+          margin: 80px 2px 0px 2px;
+          display: flex;
+        
+          flex-direction: column;
+      }
+      .search-div{
+        width: 96%;
+        height: 80px;  
+      
+        display: flex;
+        margin: 2%;
+        justify-content: space-around;
+      }
+      .popular-container{
+          width: 96%;
+          margin: auto;
+          height: 250px;
+        
+      }
+      .popular{
+        width: 100%;
+        height: 50px;
+      
+        display: flex;
+        justify-content: space-between;
+      }
+      .popular-containt{
+        width: 100%;
+        height: 200px;
+        border: 1px solid rgb(15, 15, 15);
+        display: flex;
+        flex-direction:row;
+        grid-gap: 10px;
+
+      }
+      .popular-containt > div{
+        width: 150px;
+        height: 200px;
+        justify-content: space-between;
+      
+        background-color: #fff;
+        box-shadow: 4px 7px 38px -27px rgba(0,0,0,0.75);
+      }
+      .popular-containt > div :hover{
+          cursor: pointer;
+      }
+      .img-div-pop{
+        width: 90%;
+        display: flex;
+        margin: auto;
+        height:80%;
+        
+      }
+      .img-div-pop>div{
+        width: 80%;
+        height:70%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        background-color:#F3F3F3 ;
+        border-radius: 50%;
+        
+      }
+      .img-text{
+          width: 100%;
+          height: 20%;
+        display: flex;
+           flex-direction: row;
+        
+        
+          justify-content: center;
+          color: #02475B;
+          font-size: 18px;
+      }
+
+
+      .main-img>div
+      {
+          margin: auto;
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+           
+       
+      }
+      .popular-health{
+          width: 96%;
+          height: 400px;
+         
+          margin: auto;
+      }
+      .pop-health{
+        width: 96%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        height: 50px;
+        
+      }
+      .medicin-cart-div{
+      
+          width: 100%;
+          height: 300px;
+          
+      }
+      .slide-containt{
+       
+        width: 24%;
+        height: 100%;
+       
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .slide-div-container{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        
+      }
+      #medicine-slide
+      {
+        width: 100%;
+        height: 70%;
+        color: rgb(8, 71, 71);
+       
+        border-bottom: 1px solid gray; 
+      }
+    #text-div-medi, .price-div-medi{
+        width: 100%;
+        height: 15%;
+      
+        display: flex;
+        color: #0c5266;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #cart-btn{
+        color: chocolate;
+        font-weight: bold;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }
+    #medi-cart-div{
+        width:100%;
+        height: 300px;
+      
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        overflow-y: scroll;
+        grid-gap: 20px;
+    }
+    .containt{
+        /* width:100%; */
+        height: 300px;
+       
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .mediName{
+        width:100%;
+        height: 200px;
+       
+        line-height: 4em; 
+        color: teal;
+        
+    }
+    .mediName > h1{
+        font-size: 20px;
+    }
+    .mediPrice{
+        width:100%;
+        height: 100px;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .h1head{
+        font-size: 18px;
+        color: #0c5266;
+    }
+    .mediBtn{
+        width: 150px;
+        height: 30px;
+        color: #FC9916;
+        font-weight: 800;
+         border: none;
+    }
+
+    /* cart-styling */
+    #cartDiv{
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        grid-gap: 5%;
+       
+    }
+    .cartCont{
+        width: 200px;
+        height: 250px;
+       
+        display: flex;
+        flex-direction: column;
+        line-height: 3em;
+
+    }
+    .mediNme{
+        width: 200px;
+        height: 200px;
+       
+        display: flex;
+        flex-direction: column;
+    }
+    .mediPri{
+        width: 100px;
+        height: 50px;
+       
+        /* display: flex;
+        flex-direction: column; */
+    }
+    .texth2{
+        font-size: 15px;
+        color: #0c5266;
+    }
+    .head{
+        font-size: 25px;
+        color: #082b35;  
+    }
